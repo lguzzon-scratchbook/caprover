@@ -1,8 +1,8 @@
 #!/bin/sh
 
 if ! [ $(id -u) = 0 ]; then
-   echo "Must run as sudo or root"
-   exit 1
+  echo "Must run as sudo or root"
+  exit 1
 fi
 
 sudo docker service update captain-captain --force
